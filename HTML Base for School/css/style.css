@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0032A0; /* Royal Blue */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD100; /* Golden Yellow */
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/hero-image.jpg'); /* Placeholder for a stunning Philippine landscape */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Content Sections */
+.content {
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Traditional Patterns Section */
+.patterns {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.pattern-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.pattern-item {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #333;
+}
+
+.binakul {
+    /* Basic representation of the Binakul pattern */
+    background:
+        linear-gradient(45deg, #000 25%, transparent 25%) -50px 0,
+        linear-gradient(-45deg, #000 25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, transparent 75%, #000 75%) -50px 0,
+        linear-gradient(-45deg, transparent 75%, #000 75%) -50px 0;
+    background-color: #fff;
+    background-size: 100px 100px;
+}
+
+.bunga-sama {
+    /* Simplified representation of the Bunga Sama pattern */
+    background-color: #BF0D3E; /* Crimson Red */
+    background-image:
+        repeating-linear-gradient(45deg, #FFD100 25%, transparent 25%, transparent 75%, #FFD100 75%, #FFD100),
+        repeating-linear-gradient(-45deg, #FFD100 25%, transparent 25%, transparent 75%, #FFD100 75%, #FFD100);
+    background-size: 60px 60px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
