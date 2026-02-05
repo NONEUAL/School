@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Unordered list -->
+    <h2>StarBucks</h2>
+    <ul>
+        <li>Americano</li>
+        <li>Matcha</li>
+        <li>Java Chips</li>
+        <li>Mocha</li> 
+    </ul>
+
+    <!-- Ordered List -->
+     <h2>Last Name</h2>
+     <ol>
+        <li>Velasquez</li>
+        <li>Escarilla</li>
+        <li>Zerrudo</li>
+     </ol>
+     
+</body>
+</html>
+
+<!-- Sheet Cheat
+ ul>li*20
+ ol>li*3
+ 
+ 
+ 
+ 
+ -->
