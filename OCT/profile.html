@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><div class="logo-circle">O</div><div class="brand-text"><h1>OLIVAREZ</h1><p>College Tagaytay</p></div></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Dashboard</a></li>
+            <li class="nav-item"><a href="schedule.html">My Schedule</a></li>
+            <li class="nav-item"><a href="grades.html">Grades</a></li>
+            <li class="nav-item"><a href="enrollment.html">Enrollment</a></li>
+            <li class="nav-item"><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <span class="term-badge">2nd Sem, A.Y. 2025-2026</span>
+            <div class="user-profile"><div class="avatar">GV</div></div>
+        </header>
+
+        <div class="container">
+            <h2 class="page-title">Student Profile</h2>
+
+            <div style="display:flex; gap:2rem; margin-top:1.5rem; flex-wrap:wrap;">
+                
+                <!-- ID Card Side -->
+                <div class="card" style="flex:1; text-align:center; min-width:300px;">
+                    <div style="width:100px; height:100px; background:var(--text-dark); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; margin:0 auto;">GV</div>
+                    <h3 style="margin-top:1rem;">Gabriel Velasquez</h3>
+                    <p style="color:var(--text-gray);">2023-00123-TG</p>
+                    <div class="badge bg-green" style="display:inline-block; margin-top:10px;">Officially Enrolled</div>
+                    
+                    <hr style="margin: 1.5rem 0; border:0; border-top:1px solid #eee;">
+                    
+                    <div style="text-align:left;">
+                        <p style="font-size:0.85rem; color:var(--text-gray);">Program</p>
+                        <p style="font-weight:600; margin-bottom:10px;">BS Computer Science</p>
+                        <p style="font-size:0.85rem; color:var(--text-gray);">Year Level</p>
+                        <p style="font-weight:600;">2nd Year</p>
+                    </div>
+                </div>
+
+                <!-- Edit Form Side -->
+                <div class="card" style="flex:2; min-width:300px;">
+                    <h3 style="margin-bottom:1.5rem;">Personal Information</h3>
+                    <form>
+                        <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap:1rem;">
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" value="gabriel.velasquez@olivarez.edu.ph" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="text" class="form-input" value="0917 123 4567">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Birth Date</label>
+                                <input type="date" class="form-input" value="2003-05-15" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Civil Status</label>
+                                <select class="form-input">
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Home Address</label>
+                            <input type="text" class="form-input" value="Brgy. San Jose, Tagaytay City, Cavite">
+                        </div>
+
+                        <div style="margin-top:2rem; text-align:right;">
+                            <button type="button" class="btn btn-outline" style="margin-right:10px;">Change Password</button>
+                            <button type="button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

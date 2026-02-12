@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <!-- Sidebar -->
+        <div class="brand"><div class="logo-circle">O</div><div class="brand-text"><h1>OLIVAREZ</h1><p>College Tagaytay</p></div></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Dashboard</a></li>
+            <li class="nav-item"><a href="schedule.html">My Schedule</a></li>
+            <li class="nav-item"><a href="grades.html" class="active">Grades</a></li>
+            <li class="nav-item"><a href="enrollment.html">Enrollment</a></li>
+            <li class="nav-item"><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <span class="term-badge">2nd Sem, A.Y. 2025-2026</span>
+            <div class="user-profile"><div class="avatar">GV</div></div>
+        </header>
+
+        <div class="container">
+            <h2 class="page-title">Academic Record</h2>
+            
+            <!-- Current Semester -->
+            <div class="card" style="margin-top:1.5rem;">
+                <h3 style="margin-bottom:1rem;">2025-2026 1st Semester</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Description</th>
+                            <th>Units</th>
+                            <th>Final Grade</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS 101</td>
+                            <td>Intro to Computing</td>
+                            <td>3.0</td>
+                            <td><strong>1.25</strong></td>
+                            <td><span class="badge bg-green">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>MATH 101</td>
+                            <td>College Algebra</td>
+                            <td>3.0</td>
+                            <td><strong>1.50</strong></td>
+                            <td><span class="badge bg-green">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>HIST 1</td>
+                            <td>Readings in Phil. History</td>
+                            <td>3.0</td>
+                            <td><strong>1.75</strong></td>
+                            <td><span class="badge bg-green">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td>PE 1</td>
+                            <td>Physical Fitness</td>
+                            <td>2.0</td>
+                            <td><strong>1.00</strong></td>
+                            <td><span class="badge bg-green">Passed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="margin-top:1rem; text-align:right; font-weight:600;">
+                    Semester GWA: <span style="color:var(--primary); font-size:1.2rem;">1.375</span>
+                </div>
+            </div>
+
+            <!-- Previous Semester -->
+            <div class="card" style="margin-top:1.5rem; opacity:0.8;">
+                <h3 style="margin-bottom:1rem; color:var(--text-gray);">2024-2025 2nd Semester</h3>
+                <p style="color:var(--text-gray); font-size:0.9rem;">Click to view details (Collapsed view)</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

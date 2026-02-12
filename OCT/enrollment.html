@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><div class="logo-circle">O</div><div class="brand-text"><h1>OLIVAREZ</h1><p>College Tagaytay</p></div></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Dashboard</a></li>
+            <li class="nav-item"><a href="schedule.html">My Schedule</a></li>
+            <li class="nav-item"><a href="grades.html">Grades</a></li>
+            <li class="nav-item"><a href="enrollment.html" class="active">Enrollment</a></li>
+            <li class="nav-item"><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <span class="term-badge" style="background:var(--accent); color:black;">Enrollment Open</span>
+            <div class="user-profile"><div class="avatar">GV</div></div>
+        </header>
+
+        <div class="container">
+            <div class="page-header">
+                <h2 class="page-title">Subject Selection</h2>
+                <button class="btn btn-primary">Proceed to Assessment (0 Selected)</button>
+            </div>
+
+            <div style="display:flex; gap:2rem;">
+                <!-- Main Selection Area -->
+                <div style="flex:2;">
+                    <!-- Filter -->
+                    <div style="display:flex; gap:10px; margin-bottom:1rem;">
+                        <select class="form-input" style="width:auto;"><option>2nd Year - 2nd Sem</option></select>
+                        <select class="form-input" style="width:auto;"><option>All Departments</option></select>
+                    </div>
+
+                    <!-- Class Card 1 -->
+                    <div class="card" style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center;">
+                        <div>
+                            <div style="font-weight:700; font-size:1.1rem;">CS 103 - Object Oriented Prog</div>
+                            <div style="font-size:0.9rem; color:var(--text-gray); margin-top:4px;">
+                                Prof. Java • Mon/Wed 1:00 PM • Lab 2
+                            </div>
+                            <div style="font-size:0.8rem; color:var(--primary); margin-top:4px;">Prerequisite: CS 102 (Passed)</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <div style="font-size:0.8rem; margin-bottom:5px;">Slots: 25/40</div>
+                            <button class="btn btn-primary">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- Class Card 2 -->
+                    <div class="card" style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center;">
+                        <div>
+                            <div style="font-weight:700; font-size:1.1rem;">ETHICS 1 - Ethics</div>
+                            <div style="font-size:0.9rem; color:var(--text-gray); margin-top:4px;">
+                                Prof. Plato • Tue/Thu 8:00 AM • RM 301
+                            </div>
+                        </div>
+                        <div style="text-align:right;">
+                            <div style="font-size:0.8rem; margin-bottom:5px;">Slots: 38/40</div>
+                            <button class="btn btn-primary">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- Class Card 3 (Conflict) -->
+                    <div class="card" style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center; background:#f9fafb; opacity:0.7;">
+                        <div>
+                            <div style="font-weight:700; font-size:1.1rem; color:var(--text-gray);">FIL 2 - Panitikan</div>
+                            <div style="font-size:0.9rem; color:var(--text-gray); margin-top:4px;">
+                                Prof. Cruz • Mon/Wed 1:00 PM • RM 205
+                            </div>
+                            <div style="font-size:0.8rem; color:var(--danger); margin-top:4px;">⚠ Conflict with CS 103</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <button class="btn btn-outline" disabled>Unavailable</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

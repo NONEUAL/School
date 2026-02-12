@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="brand">
+            <div class="logo-circle">O</div>
+            <div class="brand-text">
+                <h1>OLIVAREZ</h1>
+                <p>College Tagaytay</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html" class="active">Dashboard</a></li>
+            <li class="nav-item"><a href="schedule.html">My Schedule</a></li>
+            <li class="nav-item"><a href="grades.html">Grades</a></li>
+            <li class="nav-item"><a href="enrollment.html">Enrollment</a></li>
+            <li class="nav-item"><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="top-bar">
+            <span class="term-badge">2nd Sem, A.Y. 2025-2026</span>
+            <div class="user-profile">
+                <div style="text-align:right">
+                    <div style="font-weight:600; font-size:0.9rem;">Gabriel Velasquez</div>
+                    <div style="font-size:0.75rem; color:gray;">BS Computer Science</div>
+                </div>
+                <div class="avatar">GV</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="page-header">
+                <div>
+                    <h2 class="page-title">Good Morning, Gabriel! </h2>
+                    <p style="color:var(--text-gray)">Here is your academic overview.</p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-label">General Weighted Avg</div>
+                    <div class="card-value">1.75</div>
+                    <span class="badge bg-green">Dean's Lister Candidate</span>
+                </div>
+                <div class="card">
+                    <div class="card-label">Units Enrolled</div>
+                    <div class="card-value">23.0</div>
+                    <span class="badge bg-yellow">Regular Load</span>
+                </div>
+                <div class="card">
+                    <div class="card-label">Absences</div>
+                    <div class="card-value">2</div>
+                    <span class="badge bg-green">Good Standing</span>
+                </div>
+            </div>
+
+            <!-- Today's Class -->
+            <div class="table-wrapper">
+                <div style="padding:1.25rem; border-bottom:1px solid #eee; display:flex; justify-content:space-between;">
+                    <h3 style="font-weight:600">Today's Schedule</h3>
+                    <a href="schedule.html" style="color:var(--primary); text-decoration:none; font-size:0.9rem;">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Subject</th>
+                            <th>Room</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 AM - 10:00 AM</td>
+                            <td>CS 102 - Data Structures</td>
+                            <td>LAB 3</td>
+                            <td><span class="badge bg-green">Finished</span></td>
+                        </tr>
+                        <tr>
+                            <td>10:30 AM - 12:00 PM</td>
+                            <td>MATH 201 - Linear Algebra</td>
+                            <td>RM 405</td>
+                            <td><span class="badge bg-yellow">Ongoing</span></td>
+                        </tr>
+                        <tr>
+                            <td>01:00 PM - 03:00 PM</td>
+                            <td>PE 2 - Rhythmic Activities</td>
+                            <td>GYM</td>
+                            <td><span class="badge" style="background:#eee">Upcoming</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
