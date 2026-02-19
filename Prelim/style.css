@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════════════
+/* 
    CSS CUSTOM PROPERTIES (variables)
-   ═══════════════════════════════════════════════════ */
+    */
 :root {
   --bg: #0d0f14;
   --surface: #141720;
@@ -15,9 +15,9 @@
   --code-bg: #0a0c12;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    RESET & BASE
-   ═══════════════════════════════════════════════════ */
+    */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -28,9 +28,9 @@ body {
   line-height: 1.6;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    HEADER
-   ═══════════════════════════════════════════════════ */
+    */
 header {
   padding: 60px 40px 40px;
   border-bottom: 1px solid var(--border);
@@ -65,9 +65,9 @@ header p {
   font-size: 1rem;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    TAGS (header badges)
-   ═══════════════════════════════════════════════════ */
+    */
 .tags {
   display: flex;
   gap: 8px;
@@ -91,18 +91,18 @@ header p {
 .tag-purple { background: #2a1a3a; color: var(--accent4); border: 1px solid #3f2a55; }
 .tag-yellow { background: #3a2a1a; color: #f7c04f; border: 1px solid #5a3f20; }
 
-/* ═══════════════════════════════════════════════════
+/* 
    LAYOUT CONTAINER
-   ═══════════════════════════════════════════════════ */
+    */
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 40px 40px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    SECTION TITLE
-   ═══════════════════════════════════════════════════ */
+    */
 .section-title {
   font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
@@ -123,9 +123,9 @@ header p {
   background: var(--border);
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    GRIDS
-   ═══════════════════════════════════════════════════ */
+    */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
@@ -138,9 +138,9 @@ header p {
   gap: 16px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    CARD
-   ═══════════════════════════════════════════════════ */
+    */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -169,9 +169,9 @@ header p {
 
 .card-body { padding: 18px; }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DOT (colored dot in card headers)
-   ═══════════════════════════════════════════════════ */
+    */
 .dot {
   width: 10px;
   height: 10px;
@@ -181,11 +181,10 @@ header p {
 .dot-blue   { background: #4f8ef7; }
 .dot-orange { background: #f76f4f; }
 .dot-green  { background: #4fcfa0; }
+.dot-yellow { background: #f7c04f; }
 .dot-purple { background: #c96af7; }
 
-/* ═══════════════════════════════════════════════════
-   PREVIEW BOXES
-   ═══════════════════════════════════════════════════ */
+/* PREVIEW BOXES*/
 .preview {
   background: #fff;
   border-radius: 8px;
@@ -206,9 +205,7 @@ header p {
 .preview-zindex { height: 80px; position: relative; overflow: hidden; }
 .preview-text-tags { font-size: 13px; }
 
-/* ═══════════════════════════════════════════════════
-   DEMO - DISPLAY (block / inline / inline-block)
-   ═══════════════════════════════════════════════════ */
+/*DEMO - DISPLAY (block / inline / inline-block)*/
 .demo-block {
   background: #6ec16e;
   border: 2px solid #4040be;
@@ -238,9 +235,9 @@ header p {
   line-height: 50px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - FLEX & GRID
-   ═══════════════════════════════════════════════════ */
+    */
 .demo-box {
   border: 2px solid #000;
   padding: 6px;
@@ -263,9 +260,9 @@ header p {
   padding: 8px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - TABLES
-   ═══════════════════════════════════════════════════ */
+    */
 .demo-table {
   border-collapse: collapse;
   width: 100%;
@@ -313,9 +310,9 @@ header p {
 .td-center { text-align: center; }
 .td-middle { vertical-align: middle; }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - BOX MODEL VISUALIZER
-   ═══════════════════════════════════════════════════ */
+    */
 .box-model-viz {
   background: #2a3c5e;
   border: 3px dashed var(--accent);
@@ -355,9 +352,9 @@ header p {
   margin-bottom: 2px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - POSITION
-   ═══════════════════════════════════════════════════ */
+    */
 .demo-static {
   background: #2a3c5e;
   padding: 6px;
@@ -448,9 +445,9 @@ header p {
   font-size: 12px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - FORMS & INPUTS
-   ═══════════════════════════════════════════════════ */
+    */
 .demo-input {
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -503,9 +500,9 @@ header p {
 .demo-btn-full  { width: 100%; display: block; }
 .demo-btn-mt    { margin-top: 5px; }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - CSS SELECTORS / TEXT STYLING
-   ═══════════════════════════════════════════════════ */
+    */
 
 /* Styled text demo - purple, italic, letter-spaced */
 .demo-styled-text {
@@ -516,9 +513,9 @@ header p {
   line-height: 1.6;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    DEMO - COLOR SWATCHES
-   ═══════════════════════════════════════════════════ */
+    */
 .swatches-container { margin-top: 10px; }
 
 .color-swatch {
@@ -550,9 +547,7 @@ header p {
 .swatch-transparent-color { background: rgba(0, 0, 0, 0.5); border: 1px solid #999; }
 .swatch-hsl-color       { background: hsl(200, 80%, 50%); }
 
-/* ═══════════════════════════════════════════════════
-   DEMO - HTML TEXT TAGS
-   ═══════════════════════════════════════════════════ */
+/* DEMO - HTML TEXT TAGS*/
 .demo-link  { color: #4f8ef7; }
 .demo-code  { background: #eee; padding: 2px 5px; border-radius: 3px; }
 .demo-hr    { margin: 8px 0; }
@@ -578,16 +573,12 @@ header p {
   font-size: 12px;
 }
 
-/* ═══════════════════════════════════════════════════
-   DEMO - LISTS
-   ═══════════════════════════════════════════════════ */
+/* DEMO - LISTS */
 .demo-ul { list-style: disc;    padding-left: 20px; color: #222; }
 .demo-ol { list-style: decimal; padding-left: 20px; color: #222; }
 .demo-ul li, .demo-ol li { margin: 3px 0; }
 
-/* ═══════════════════════════════════════════════════
-   EMMET ROWS (shortcut section)
-   ═══════════════════════════════════════════════════ */
+/* EMMET ROWS (shortcut section)*/
 .emmet-row {
   display: flex;
   align-items: center;
@@ -612,9 +603,7 @@ header p {
 .arrow        { color: var(--muted); }
 .emmet-result { color: var(--muted); font-size: 12px; }
 
-/* ═══════════════════════════════════════════════════
-   PROPERTY TABLE (box model & display summary)
-   ═══════════════════════════════════════════════════ */
+/* PROPERTY TABLE (box model & display summary)*/
 .prop-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 
 .prop-table td {
@@ -633,17 +622,13 @@ header p {
 .prop-table td:last-child { color: var(--muted); }
 .prop-table tr:last-child td { border-bottom: none; }
 
-/* ═══════════════════════════════════════════════════
-   SCROLLBAR
-   ═══════════════════════════════════════════════════ */
+/*SCROLLBAR*/
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
 
-/* ═══════════════════════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════════════════════ */
+/*FOOTER*/
 footer {
   text-align: center;
   padding: 40px;
