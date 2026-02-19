@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Cheatsheet - Prelim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+  <h1>HTML & CSS <span>Cheatsheet</span></h1>
+  <p>Prelim Examples - Velasquez Testing</p>
+  <div class="tags">
+    <span class="tag tag-blue">HTML</span>
+    <span class="tag tag-orange">CSS</span>
+    <span class="tag tag-yellow">Semantic tags</span>
+    <span class="tag tag-green">Box Model</span>
+    <span class="tag tag-purple">Flexbox &amp; Grid</span>
+    <span class="tag tag-blue">Forms</span>
+    <span class="tag tag-orange">Positioning</span>
+    
+  </div>
+</header>
+
+<div class="container">
+
+
+  <!-- SHORTCUTS - VS Code Emmet quick expand cheat   -->
+
+  <div class="section-title">Shortcuts</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">Shortcuts - Quick Expand</span>
+      </div>
+      <div class="card-body">
+        <!-- Each row shows an Emmet shortcut and what it expands to -->
+        <div class="emmet-row">
+          <span class="emmet-shortcut">div.box*5</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">5 &lt;div class="box"&gt;&lt;/div&gt;</span>
+        </div>
+        <div class="emmet-row">
+          <span class="emmet-shortcut">ul&gt;li*5</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">ul with 5 li items</span>
+        </div>
+        <div class="emmet-row">
+          <span class="emmet-shortcut">ol&gt;li*3</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">ol with 3 li items</span>
+        </div>
+        <div class="emmet-row">
+          <span class="emmet-shortcut">div&gt;p+a</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">div with p then a inside</span>
+        </div>
+        <div class="emmet-row">
+          <span class="emmet-shortcut">!</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">Full HTML boilerplate</span>
+        </div>
+        <div class="emmet-row">
+          <span class="emmet-shortcut">lorem</span>
+          <span class="arrow">→</span>
+          <span class="emmet-result">Lorem ipsum placeholder text</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- LISTS - ul (unordered) and ol (ordered) -->
+
+  <div class="section-title">Lists - ul & ol</div>
+  <div class="grid">
+
+    <!-- Unordered list: bullet points, no specific order -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-green"></div>
+        <span class="card-title">Unordered List</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <ul class="demo-ul">
+            <li>Americano</li>
+            <li>Matcha</li>
+            <li>Mocha</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ordered list: numbered items, sequence matters -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-purple"></div>
+        <span class="card-title">Ordered List</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <ol class="demo-ol">
+            <li>Velasquez</li>
+            <li>Escarilla</li>
+            <li>Zerrudo</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- TABLES - structure, colspan, rowspan, styling   -->
+
+  <div class="section-title">Tables</div>
+  <div class="grid-wide">
+
+    <!-- Table with colspan (merges columns) and rowspan (merges rows) -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">Table Structure + colspan / rowspan</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark">
+          <table class="demo-table">
+            <tr><th>Col 1</th><th>Col 2</th></tr>
+            <tr><td class="td-center" colspan="2">Spans 2 cols</td></tr>
+            <tr><td>Cell A</td><td class="td-middle td-center" rowspan="2">Spans 2 rows</td></tr>
+            <tr><td>Cell B</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table CSS: border-collapse, nth-child striping, dark header -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-orange"></div>
+        <span class="card-title">Table CSS Styling</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark">
+          <table class="demo-table demo-table-styled">
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+            </tr>
+            <tr>
+              <td>Velasquez</td>
+              <td>BSIT</td>
+            </tr>
+            <tr class="tr-even">
+              <td>Escarilla</td>
+              <td>BSCRIM</td>
+            </tr>
+            <tr>
+              <td>Zerrudo</td>
+              <td>BSED</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- CSS BOX MODEL - margin, border, padding, content -->
+
+  <div class="section-title">CSS Box Model</div>
+  <div class="grid">
+
+    <!-- Visual diagram of the box model layers -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-green"></div>
+        <span class="card-title">Box Model Visual</span>
+      </div>
+      <div class="card-body">
+        <div class="box-model-viz">
+          <div class="box-model-label">MARGIN (outside spacing)</div>
+          <div class="border-layer">
+            <div class="box-model-label">BORDER</div>
+            <div class="padding-layer">
+              <div class="box-model-label">PADDING (inside spacing)</div>
+              <div class="content-layer">CONTENT (width × height)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reference table of box model CSS properties -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-purple"></div>
+        <span class="card-title">Box Model Properties</span>
+      </div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>margin</td><td>Space OUTSIDE the border. <code>margin: auto</code> centers block.</td></tr>
+          <tr><td>padding</td><td>Space INSIDE the border (between border &amp; content).</td></tr>
+          <tr><td>border</td><td><code>width style color</code> - e.g. <code>2px solid #000</code></td></tr>
+          <tr><td>width / height</td><td>Size of the content area.</td></tr>
+          <tr><td>box-sizing</td><td><code>border-box</code> includes padding &amp; border in the width.</td></tr>
+          <tr><td>margin shorthand</td><td><code>top right bottom left</code> or <code>top/bottom left/right</code></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- DISPLAY PROPERTY - block, inline, flex, grid   -->
+
+  <div class="section-title">CSS Display Property</div>
+  <div class="grid">
+
+    <!-- block takes full width; inline flows with text; inline-block allows sizing -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">block, inline, inline-block, none</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <div class="demo-block">Block - full width</div>
+          <div class="demo-block">Block - full width</div>
+          <span class="demo-inline">Inline</span>
+          <span class="demo-inline">Inline</span>
+          <br><br>
+          <span class="demo-inline-block">InlineBlock</span>
+          <span class="demo-inline-block">InlineBlock</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flexbox: 1D layout, items arranged in a row with gap -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-green"></div>
+        <span class="card-title">Flexbox</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <div class="demo-flex">
+            <div class="demo-box">Item 1</div>
+            <div class="demo-box">Item 2</div>
+            <div class="demo-box">Item 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS Grid: 2D layout with rows AND columns -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-orange"></div>
+        <span class="card-title">CSS Grid</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <div class="demo-grid">
+            <div class="demo-box">G1</div>
+            <div class="demo-box">G2</div>
+            <div class="demo-box">G3</div>
+            <div class="demo-box">G4</div>
+            <div class="demo-box">G5</div>
+            <div class="demo-box">G6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick reference summary of all display values -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-purple"></div>
+        <span class="card-title">Display Cheat Summary</span>
+      </div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>block</td><td>Full width, starts on new line. Can set width/height.</td></tr>
+          <tr><td>inline</td><td>Flows with text. Width/height <em>ignored</em>.</td></tr>
+          <tr><td>inline-block</td><td>Flows inline BUT allows width/height.</td></tr>
+          <tr><td>none</td><td>Completely hidden - takes no space.</td></tr>
+          <tr><td>flex</td><td>1D layout. Items arranged in row or column.</td></tr>
+          <tr><td>grid</td><td>2D layout. Rows AND columns.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- POSITION PROPERTY - static, relative, absolute, sticky, fixed, z-index -->
+
+  <div class="section-title">CSS Position Property</div>
+  <div class="grid">
+
+    <!-- static: default flow; relative: offset from its own normal position -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">static &amp; relative</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark preview-pos">
+          <div class="demo-static">Static (default)</div>
+          <div class="demo-relative">Relative (+10 top, +20 left)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- absolute: removed from flow, positioned relative to nearest positioned parent -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-green"></div>
+        <span class="card-title">absolute</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark">
+          <div class="demo-relative-parent">
+            <span class="demo-parent-label">Parent (relative)</span>
+            <div class="demo-absolute">Absolute child</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sticky: stays in flow until scroll threshold; fixed: always on screen -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-orange"></div>
+        <span class="card-title">sticky &amp; fixed</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark">
+          <span class="demo-sticky-note">sticky - sticks to top while scrolling</span>
+          <br><br>
+          <span class="demo-fixed-note">fixed - always on screen (like a chat button)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- z-index: controls stacking order; higher = on top; only works on positioned elements -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-purple"></div>
+        <span class="card-title">z-index</span>
+      </div>
+      <div class="card-body">
+        <div class="preview dark preview-zindex">
+          <div class="demo-z3">z-index: 3 (top)</div>
+          <div class="demo-z1">z-index: 1 (behind)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- FORMS & INPUTS - input types, form structure, buttons -->
+
+  <div class="section-title">HTML Forms &amp; Inputs</div>
+  <div class="grid-wide">
+
+    <!-- Common input types: text, email, password, number, date, radio, checkbox, textarea -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">Common Input Types</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <input class="demo-input" type="text" placeholder="First Name">
+          <input class="demo-input" type="email" placeholder="Email">
+          <input class="demo-input" type="password" placeholder="Password">
+          <input class="demo-input" type="number" placeholder="Quantity">
+          <input class="demo-input" type="date">
+          <div class="demo-radio-group">
+            <input type="radio" name="dgender"> Male &nbsp;
+            <input type="radio" name="dgender"> Female
+          </div>
+          <div class="demo-radio-group">
+            <input type="checkbox"> Java &nbsp;
+            <input type="checkbox"> JavaScript &nbsp;
+            <input type="checkbox"> PHP
+          </div>
+          <textarea class="demo-textarea" rows="3" placeholder="Comment..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full form with select dropdown, submit and reset buttons -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-orange"></div>
+        <span class="card-title">Form Structure + Buttons</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <input class="demo-input" type="text" placeholder="First Name" required>
+          <select class="demo-select">
+            <option>BSIT</option>
+            <option>BSCRIM</option>
+            <option>BSED</option>
+          </select>
+          <button class="demo-btn demo-btn-green demo-btn-full">Submit</button>
+          <button class="demo-btn demo-btn-red demo-btn-full demo-btn-mt">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- CSS SELECTORS & TEXT STYLING-->
+
+  <div class="section-title">CSS Selectors & Text Styling</div>
+  <div class="grid">
+
+    <!-- CSS selector types: element, class, id, descendant, child, attribute, pseudo-class -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-blue"></div>
+        <span class="card-title">CSS Selectors</span>
+      </div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>h1 { }</td><td>element selector</td></tr>
+          <tr><td>.box { }</td><td>class selector</td></tr>
+          <tr><td>#box { }</td><td>id selector (unique)</td></tr>
+          <tr><td>div p { }</td><td>descendant selector</td></tr>
+          <tr><td>div &gt; p { }</td><td>direct child selector</td></tr>
+          <tr><td>input[type="text"] { }</td><td>attribute selector</td></tr>
+          <tr><td>p:hover { }</td><td>pseudo-class selector</td></tr>
+          <tr><td>tr:nth-child(even) { }</td><td>nth-child pseudo-class</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Text & font properties: color, size, weight, style, alignment, spacing -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-green"></div>
+        <span class="card-title">Text &amp; Font Properties</span>
+      </div>
+      <div class="card-body">
+        <div class="preview">
+          <p class="demo-styled-text">Styled text - color, italic, letter-spacing!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color formats: named, hex, rgb, rgba, hsl with swatches -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-orange"></div>
+        <span class="card-title">Colors in CSS</span>
+      </div>
+      <div class="card-body">
+        <div class="swatches-container">
+          <div class="color-swatch"><div class="swatch-box swatch-darkblue"></div><span class="swatch-text">#13336e - dark blue (hex)</span></div>
+          <div class="color-swatch"><div class="swatch-box swatch-purple-color"></div><span class="swatch-text">#ac049e - purple (hex)</span></div>
+          <div class="color-swatch"><div class="swatch-box swatch-green-color"></div><span class="swatch-text">rgb(110,193,110) - green</span></div>
+          <div class="color-swatch"><div class="swatch-box swatch-red-color"></div><span class="swatch-text">#ec5d5d - red-ish (hex)</span></div>
+          <div class="color-swatch"><div class="swatch-box swatch-transparent-color"></div><span class="swatch-text">rgba(0,0,0,0.5) - semi-transparent</span></div>
+          <div class="color-swatch"><div class="swatch-box swatch-hsl-color"></div><span class="swatch-text">hsl(200, 80%, 50%) - cyan-blue</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HTML inline text tags: b, i, u, a, code, headings, p, div, span -->
+    <div class="card">
+      <div class="card-header">
+        <div class="dot dot-purple"></div>
+        <span class="card-title">HTML Text Tags</span>
+      </div>
+      <div class="card-body">
+        <div class="preview preview-text-tags">
+          <b>Bold</b> &nbsp; <i>Italic</i> &nbsp; <u>Underline</u><br>
+          <a class="demo-link" href="#">Link</a> &nbsp;
+          <code class="demo-code">inline code</code>
+          <hr class="demo-hr">
+          <h1 class="demo-h1">h1 Heading</h1>
+          <h2 class="demo-h2">h2 Heading</h2>
+          <h3 class="demo-h3">h3 Heading</h3>
+          <h4 class="demo-h4">h4 Heading</h4>
+          <h5 class="demo-h5">h5 Heading</h5>
+          <h6 class="demo-h6">h6 Heading</h6>
+          <p class="demo-p">Paragraph text</p>
+          <div class="demo-div-block">div - block container</div>
+          <span class="demo-span-inline">span - inline container</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>  <!-- /container -->
+
+<!-- FOOTER -->
+
+<footer>
+  HTML & CSS Cheatsheet · NONEUAL
+</footer>
+
+</body>
+</html>
