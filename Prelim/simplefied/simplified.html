@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML/CSS Cheat Sheet - Simple View</title>
+  
+  <!-- Clean, readable fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <h1>HTML & CSS <span>Cheat Sheet</span></h1>
+  <p>Easy to read reference for students.</p>
+  <div class="tags">
+    <span class="tag">Semantic Tags</span>
+    <span class="tag">Box Model</span>
+    <span class="tag">Flex & Grid</span>
+    <span class="tag">Forms</span>
+    <span class="tag">Positioning</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- SHORTCUTS -->
+  <div class="section-title">01. Shortcuts (Emmet)</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-blue"></div>Quick Expand</div>
+      <div class="card-body">
+        <div class="emmet-row"><span class="emmet-shortcut">div.box*5</span> <span>5 divs with class box</span></div>
+        <div class="emmet-row"><span class="emmet-shortcut">ul&gt;li*3</span> <span>Unordered list, 3 items</span></div>
+        <div class="emmet-row"><span class="emmet-shortcut">div&gt;p+a</span> <span>Div with P and Link</span></div>
+        <div class="emmet-row"><span class="emmet-shortcut">!</span> <span>HTML Boilerplate</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMANTIC TAGS -->
+  <div class="section-title">02. Semantic Structure</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-purple"></div>Tags Meaning</div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>&lt;header&gt;</td><td>Logos, titles, navigation.</td></tr>
+          <tr><td>&lt;nav&gt;</td><td>Links to other pages.</td></tr>
+          <tr><td>&lt;main&gt;</td><td>Primary unique content.</td></tr>
+          <tr><td>&lt;section&gt;</td><td>Thematic grouping.</td></tr>
+          <tr><td>&lt;article&gt;</td><td>Self-contained content (blog).</td></tr>
+          <tr><td>&lt;footer&gt;</td><td>Copyright, contact info.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- LISTS -->
+  <div class="section-title">03. Lists</div>
+  <div class="grid">
+    <!-- Unordered -->
+    <div class="card">
+      <div class="card-header"><div class="dot dot-green"></div>Unordered (Bullets)</div>
+      <div class="card-body">
+        <ul style="margin-left: 20px;">
+          <li>Americano</li>
+          <li>Matcha</li>
+          <li>Mocha</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Ordered -->
+    <div class="card">
+      <div class="card-header"><div class="dot dot-purple"></div>Ordered (Numbers)</div>
+      <div class="card-body">
+        <ol style="margin-left: 20px;">
+          <li>Velasquez</li>
+          <li>Escarilla</li>
+          <li>Zerrudo</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLES -->
+  <div class="section-title">04. Tables</div>
+  <div class="grid-wide">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-blue"></div>Structure & Merging</div>
+      <div class="card-body">
+        <table class="demo-table">
+          <tr><th>Col 1</th><th>Col 2</th></tr>
+          <tr><td colspan="2" style="text-align:center; background:#f0fff4;">colspan="2" (Merges Columns)</td></tr>
+          <tr><td>Cell A</td><td rowspan="2" style="vertical-align:middle; text-align:center; background:#fff5f5;">rowspan="2"<br>(Merges Rows)</td></tr>
+          <tr><td>Cell B</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="dot dot-orange"></div>Styled Table</div>
+      <div class="card-body">
+        <table class="demo-table-styled">
+          <tr><th>Name</th><th>Course</th></tr>
+          <tr><td>Velasquez</td><td>BSIT</td></tr>
+          <tr class="tr-even"><td>Escarilla</td><td>BSCRIM</td></tr>
+          <tr><td>Zerrudo</td><td>BSED</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOX MODEL -->
+  <div class="section-title">05. CSS Box Model</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-green"></div>Visualization</div>
+      <div class="card-body">
+        <div class="box-model-viz">
+          <div class="box-model-label">MARGIN (Outside)</div>
+          <div class="border-layer">
+            <div class="box-model-label">BORDER</div>
+            <div class="padding-layer">
+              <div class="box-model-label">PADDING (Inside)</div>
+              <div class="content-layer">CONTENT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="dot dot-purple"></div>Properties</div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>margin</td><td>Space outside element.</td></tr>
+          <tr><td>padding</td><td>Space inside, before content.</td></tr>
+          <tr><td>border</td><td>Line between margin/padding.</td></tr>
+          <tr><td>box-sizing</td><td>Use <code>border-box</code> to make sizing easy.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISPLAY -->
+  <div class="section-title">06. Display Properties</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-blue"></div>Basic Displays</div>
+      <div class="card-body">
+        <div class="demo-block">display: block (Full Width)</div>
+        <div class="demo-block">display: block (Full Width)</div>
+        <br>
+        <span class="demo-inline">Inline</span>
+        <span class="demo-inline">Inline</span>
+        <br><br>
+        <div class="demo-inline-block">Inline<br>Block</div>
+        <div class="demo-inline-block">Inline<br>Block</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="dot dot-green"></div>Flexbox (1 Direction)</div>
+      <div class="card-body">
+        <div class="demo-flex">
+          <div class="demo-box" style="flex:1">Flex 1</div>
+          <div class="demo-box" style="flex:1">Flex 1</div>
+          <div class="demo-box" style="flex:1">Flex 1</div>
+        </div>
+        <p style="font-size:12px; margin-top:5px; color:#718096">Good for rows or columns.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="dot dot-orange"></div>Grid (2 Directions)</div>
+      <div class="card-body">
+        <div class="demo-grid">
+          <div class="demo-box">1</div>
+          <div class="demo-box">2</div>
+          <div class="demo-box">3</div>
+          <div class="demo-box">4</div>
+          <div class="demo-box">5</div>
+          <div class="demo-box">6</div>
+        </div>
+        <p style="font-size:12px; margin-top:5px; color:#718096">Good for complex layouts.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- POSITION -->
+  <div class="section-title">07. Positioning</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-green"></div>Absolute</div>
+      <div class="card-body">
+        <div class="demo-relative-parent">
+          <p style="padding:10px; font-size:12px; color:#718096">Parent: Relative</p>
+          <div class="demo-absolute">Child: Absolute</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="dot dot-orange"></div>Sticky & Fixed</div>
+      <div class="card-body">
+        <span class="demo-sticky-note">Sticky: Sticks when scrolling</span>
+        <br><br>
+        <span class="demo-fixed-note">Fixed: Glued to screen</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMS -->
+  <div class="section-title">08. Forms</div>
+  <div class="grid-wide">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-blue"></div>Input Types</div>
+      <div class="card-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <input class="demo-input" type="text" placeholder="Text Input">
+          <input class="demo-input" type="email" placeholder="Email Input">
+          <input class="demo-input" type="password" placeholder="Password">
+          <input class="demo-input" type="number" placeholder="Number">
+        </div>
+        <div style="margin-top:10px;">
+          <label><input type="radio" name="g"> Radio A</label> &nbsp;
+          <label><input type="radio" name="g"> Radio B</label> &nbsp;|&nbsp;
+          <label><input type="checkbox"> Checkbox</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><div class="dot dot-orange"></div>Form Layout</div>
+      <div class="card-body">
+        <select class="demo-select">
+          <option>Select Course...</option>
+          <option>BSIT</option>
+          <option>BSCRIM</option>
+        </select>
+        <textarea class="demo-textarea" rows="2" placeholder="Message..."></textarea>
+        <div style="display:flex; gap:10px;">
+          <button class="demo-btn demo-btn-green demo-btn-full">Submit</button>
+          <button class="demo-btn demo-btn-red demo-btn-full">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SELECTORS -->
+  <div class="section-title">09. CSS Selectors</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="dot dot-purple"></div>Basic Selectors</div>
+      <div class="card-body">
+        <table class="prop-table">
+          <tr><td>.class</td><td>Selects by class name.</td></tr>
+          <tr><td>#id</td><td>Selects by unique ID.</td></tr>
+          <tr><td>element</td><td>Selects tags (e.g., h1, p).</td></tr>
+          <tr><td>div > p</td><td>Direct child.</td></tr>
+          <tr><td>:hover</td><td>Mouse over state.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Simple HTML & CSS Cheatsheet
+</footer>
+
+</body>
+</html>

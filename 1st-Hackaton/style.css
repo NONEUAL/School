@@ -1,0 +1,27 @@
+    body {
+      background-color: #838c99;
+    }
+    
+    h1 {
+      color: #5e11da;
+    }
+    h2{
+      color: #450ddf;
+    }
+    button{
+      background-color:#052147;
+    }
+    p{
+      color:#052147;
+    }
+    footer{
+      color: #052147;
+    }
+    
+    article{
+      background-color: #c9d1d9;
+    }
+
+    /* img[type="title1"], img[type="title2"], img[type="title3"], img[type="title4"], img[type="title5"], img[type="title6"], img[type="title7"], img[type="title8"]{
+      width: 20%;
+    } */
