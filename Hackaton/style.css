@@ -1,0 +1,36 @@
+.container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+.input{
+      width: 100%; padding: 8px; margin: 5px 0;
+      border: 1px solid #cbd5e0; border-radius: 4px; font-family: inherit;
+    }
+
+
+    .card-header {
+      background: #f7fafc;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-blue{
+        background-color:  lightblue;
+    }
+
+    .card-body { padding: 20px; flex: 1; 
+    font: sans-serif }
+
+    table { width: 100%;  font-size: 13px; }
+    th{ padding: 8px 12px; border: 1px solid #e2e8f0; text-align: left; }
+    td{ padding: 8px 12px; border: 1px solid #e2e8f0; column-span:all}
