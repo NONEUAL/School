@@ -1,0 +1,11 @@
+AGENDA FOR TODAY
+    - What is JavaScript
+        - programming language for websites. It can manipulate both HTML & CSS.
+        - It can perform logical checks, calculation, modify existing HTML & CSS codes.
+    - <script>
+    - console.log();
+    - First "Hello World!"
+    - External JavaScript
+    - Variables / Identifier
+    - Data Types
+    - Concatenation
