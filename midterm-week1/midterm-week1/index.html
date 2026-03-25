@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --dark: #2c2c2c;
+            --white: #ffffff;
+        } 
+        
+        body {
+            background: var(--dark);
+        }
+
+        nav > ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav > ul > li > a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: var(--primary);
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            display: grid;
+            gap: 5px;
+        }
+
+        article {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 10px solid var(--primary);    
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- This is header -->
+    <header>
+        <h1> My School Portal </h1>
+
+        <!-- This is nav -->
+        <nav>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- This is main -->
+    <main>
+
+        <!-- This is section -->
+        <section class="welcome">
+
+            <!-- This is article -->
+            <article>
+                <h2>Welcome to our Website!</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, sit voluptas quam ut iure dolor recusandae tenetur repellat dignissimos quas ipsum voluptatibus, asperiores expedita provident nihil autem voluptatem. Earum tempore corrupti explicabo velit qui excepturi maxime cum perferendis tenetur quod aspernatur porro, tempora pariatur eligendi est dolorem voluptatibus quibusdam illo repellendus dolores dignissimos ad ipsam? Nihil in fugiat ab cumque iure, voluptas quidem assumenda adipisci aperiam esse ullam suscipit ex beatae quia animi similique eum. </p>
+            </article>
+
+            <article>
+                <h2>Welcome to our Website!</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, sit voluptas quam ut iure dolor recusandae tenetur repellat dignissimos quas ipsum voluptatibus, asperiores expedita provident nihil autem voluptatem. Earum tempore corrupti explicabo velit qui excepturi maxime cum perferendis tenetur quod aspernatur porro, tempora pariatur eligendi est dolorem voluptatibus quibusdam illo repellendus dolores dignissimos ad ipsam? Nihil in fugiat ab cumque iure, voluptas quidem assumenda adipisci aperiam esse ullam suscipit ex beatae quia animi similique eum. </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <p>Student Portal</p>
+        <p>Enrollment</p>
+        <p>Schedules</p>
+        <p>Downloads</p>
+        <p>FAQs</p>
+    </aside>
+
+    <footer>
+        &copy; 2026 My Classroom Demo | Built with HTML and CSS
+    </footer>
+
+    
+</body>
+</html>
