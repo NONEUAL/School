@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="practice\app.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="portal_title">Loading...</h1>
+        <nav>
+            <ul>
+                <table>
+                    <tr>
+                        <td><a href="#">Schedules</a></td>
+                        <td><a href="#">Downloads</a></td>
+                    </tr>
+                </table>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-grid">
+
+            <article id="profile-card">
+                <h2>Current Student Profile</h2>
+                <p><strong>Name:</strong> <span id="display_name"></span></p>
+                <p><strong>Address:</strong> <span id="display_address"></span></p>
+                <p><strong>Status:</strong> <span id="display_status"></span></p>
+            </article>
+
+
+            <section class="form-section">
+                <h2>Registration Form</h2>
+                <form id="studentForm">
+                    <input type="text" placeholder="Full Name" required> <br>
+                    <input type="email" placeholder="Email Address"> <br>
+                    <input type="password" placeholder="Password"> <br>
+                    
+                    <label>Gender:</label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female <br>
+
+                    <label>Courses:</label>
+                    <select>
+                        <option>BSIT</option>
+                        <option>BSIS</option>
+                        <option>BSCRIM</option>
+                    </select> <br>
+
+                    <textarea placeholder="Bio/Notes"></textarea> <br>
+                    <button type="submit">Update Portal</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li>Schedules</li>
+            <li>Downloads</li>
+        </ul>
+    </aside>
+
+    <footer>
+        &copy; 2026 <span id="footer_company"></span> | Semantic JS Demo
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
