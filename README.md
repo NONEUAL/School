@@ -1,8 +1,5 @@
-<div align="center">
 
-<img src="public/OCT_logo.png" alt="Olivarez College Tagaytay" width="100" />
-
-# 🎓 Student Gateway
+# Student Gateway
 
 ### An Integrated Digital Platform for Streamlining Educational Management and Student Services
 
@@ -18,7 +15,7 @@ IT 204 – System Analysis and Design · AY 2025–2026 · BSIT 212-A
 
 -----
 
-## 📖 What Is This?
+## What Is This?
 
 **Student Gateway** is a web-based student portal prototype built for Olivarez College Tagaytay (OCT). It solves a real problem: students at OCT currently have to walk to different offices just to check their grades, tuition balance, or class schedule. This platform brings everything together in one place.
 
@@ -26,38 +23,38 @@ There are **two separate portals** in this project:
 
 |Portal              |Who It’s For          |What They Can Do                                |
 |--------------------|----------------------|------------------------------------------------|
-|🎓 **Student Portal**|Enrolled students     |View grades, schedule, tuition, profile         |
-|👩‍🏫 **Faculty Portal**|Instructors / Teachers|Encode grades, view class lists, manage schedule|
+| **Student Portal**|Enrolled students     |View grades, schedule, tuition, profile         |
+| **Faculty Portal**|Instructors / Teachers|Encode grades, view class lists, manage schedule|
 
 -----
 
-## ✨ Features
+## Features
 
 ### Student Portal
 
-- 🔐 **Secure Login** — Student ID + password authentication with session storage
-- 📊 **Dashboard** — GWA summary, grade overview table, academic calendar
-- 📅 **Class Schedule** — Full timetable with subject, room, faculty, and units
-- 📝 **Grades** — Prelim, Midterm, Finals per subject with auto-computed average and pass/fail status
-- 💳 **Tuition & Payments** — Fee breakdown, payment history, outstanding balance
-- 📄 **Certificate of Matriculation** — Downloadable/printable document generated in-browser
-- 👤 **Profile & Account** — View info, change password, sign out
-- 🏫 **School Information Modal** — Quick access to OCT’s address, contacts, and office hours
+- **Secure Login** — Student ID + password authentication with session storage
+-  **Dashboard** — GWA summary, grade overview table, academic calendar
+-  **Class Schedule** — Full timetable with subject, room, faculty, and units
+-  **Grades** — Prelim, Midterm, Finals per subject with auto-computed average and pass/fail status
+-  **Tuition & Payments** — Fee breakdown, payment history, outstanding balance
+-  **Certificate of Matriculation** — Downloadable/printable document generated in-browser
+-  **Profile & Account** — View info, change password, sign out
+-  **School Information Modal** — Quick access to OCT’s address, contacts, and office hours
 
 ### Faculty Portal
 
-- 📋 **Dashboard** — Classes handled, total students, schedule preview, calendar
-- 📚 **My Classes** — Overview of all assigned classes this semester
-- ✏️ **Grade Encoding** — Enter Prelim, Midterm, Finals per student with live average computation
-- 👥 **Class List** — Full student roster per section
-- 📑 **Course Syllabus** — View and download syllabus files
-- 🗂️ **Archived Classes** — Read-only record of previous semester classes
-- 📥 **Downloadable Forms** — Grade sheets, clearance forms, and other official templates
-- 👤 **Personal Information** — Update profile details
+-  **Dashboard** — Classes handled, total students, schedule preview, calendar
+-  **My Classes** — Overview of all assigned classes this semester
+-  **Grade Encoding** — Enter Prelim, Midterm, Finals per student with live average computation
+-  **Class List** — Full student roster per section
+-  **Course Syllabus** — View and download syllabus files
+-  **Archived Classes** — Read-only record of previous semester classes
+-  **Downloadable Forms** — Grade sheets, clearance forms, and other official templates
+-  **Personal Information** — Update profile details
 
 -----
 
-## 🖥️ Tech Stack
+##  Tech Stack
 
 |Layer             |Technology                               |
 |------------------|-----------------------------------------|
@@ -73,7 +70,7 @@ There are **two separate portals** in this project:
 
 -----
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -107,7 +104,7 @@ npm run preview
 
 -----
 
-## 🔑 Demo Accounts
+##  Demo Accounts
 
 The app comes with pre-loaded demo accounts. You can log in with any of these:
 
@@ -128,7 +125,7 @@ The faculty portal is a separate app located in a different folder. Run it the s
 
 -----
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 student-gateway/
@@ -173,7 +170,7 @@ student-gateway/
 
 -----
 
-## 🎨 Design System
+##  Design System
 
 The portal uses a consistent green-and-gold color palette inspired by OCT’s official branding.
 
@@ -191,7 +188,7 @@ The portal uses a consistent green-and-gold color palette inspired by OCT’s of
 
 -----
 
-## ⚠️ Known Issues & Limitations
+##  Known Issues & Limitations
 
 - **No real backend** — All data is hardcoded in `data.js`. Nothing is saved to a real database.
 - **No online payments** — The tuition page shows payment history but cannot process new payments.
@@ -201,7 +198,7 @@ The portal uses a consistent green-and-gold color palette inspired by OCT’s of
 
 -----
 
-## 📚 Academic Context
+##  Academic Context
 
 This project was created as the **IT 204 Final Project** at Olivarez College Tagaytay.
 
@@ -217,7 +214,7 @@ The project applies the **Systems Development Life Cycle (SDLC)** — from syste
 
 -----
 
-## 🔮 Future Plans
+##  Future Plans
 
 If this system were to be fully developed and deployed, the following features would be added:
 
@@ -231,25 +228,3 @@ If this system were to be fully developed and deployed, the following features w
 - [ ] Integration with existing OCT enrollment records
 
 -----
-
-## 👨‍💻 Authors
-
-> **BSIT 212-A — Olivarez College Tagaytay**
-
-Replace this with your group members’ names before submitting.
-
-```
-[Member 1 Full Name]   — [Student ID]
-[Member 2 Full Name]   — [Student ID]
-[Member 3 Full Name]   — [Student ID]
-```
-
------
-
-<div align="center">
-
-**Olivarez College Tagaytay** · *“Demystifying Excellence in the Better Normal Landscape”*
-
-*Mind · Body · Soul*
-
-</div>
